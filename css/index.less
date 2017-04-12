@@ -1,0 +1,432 @@
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fontStyle {
+  font-size: 22px;
+  font-family: "楷体","Microsoft Yahei";
+  text-align: center;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      background: url(../images/my_bg.png) no-repeat;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+    }
+    /*中间线*/
+    .line {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      width: 1px;
+      height: 70%;
+      background-color: #000;
+      z-index: 4;
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%);
+    }
+    /*大圈*/
+    .circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform : translateX(-50%);
+      background: url(../images/my_bg.png) no-repeat;
+      z-index: 5;
+      top: -200%;
+    }
+    /*小圈*/
+    .circlet {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform : translateX(-50%);
+      background: url(../images/my_bg.png) no-repeat;
+      z-index: 5;
+      top: -200%;
+    }
+    /*第一页*/
+    .first {
+      overflow: hidden;
+      /*扇子*/
+      .fan {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        height: 20%;
+        z-index: 5;
+        -webkit-transform: translateX(-500%);
+                transform: translateX(-500%);
+      }
+      /*姓名*/
+      .myname {
+        .fontStyle;
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        opacity: 0;
+      }
+      /*年龄*/
+      .myage {
+        .fontStyle;
+        position: absolute;
+        top: 75%;
+        right: 60%;
+        opacity: 0;
+      }
+      img {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        opacity: 0;
+      }
+    }
+    /*第二页*/
+    .second {
+      overflow: hidden;
+      .brief {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: #555;
+        color: #fff;
+        font-family: "楷体","Microsoft Yahei";
+        font-size: 35px;
+        text-align: center;
+        line-height: 130px;
+        z-index: 5;
+        opacity: 0;
+      }
+      .myDate-r {
+        .fontStyle;
+        text-align: left;
+        line-height: 25px;
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        opacity: 0;
+      }
+      .myDate-l {
+        .fontStyle;
+        text-align: left;
+        line-height: 25px;
+        position: absolute;
+        top: 73%;
+        right: 60%;
+        opacity: 0;
+      }
+
+      .myWeight {
+        -webkit-transform: translateY(12px);
+                transform: translateY(12px);
+      }
+      .myGender {
+        -webkit-transform: translateY(14px);
+                transform: translateY(14px);
+      }
+      .myHobby {
+        -webkit-transform: translateY(16px);
+                transform: translateY(16px);
+
+      }
+      .myProfession {
+        -webkit-transform: translateY(18px);
+                transform: translateY(18px);
+
+      }
+      img {
+         position: absolute;
+         bottom: 15px;
+         right: 15px;
+         opacity: 0;
+       }
+    }
+    /*第三页*/
+    .third {
+      overflow: hidden;
+      .skill {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: #555;
+        color: #fff;
+        font-family: "楷体","Microsoft Yahei";
+        font-size: 35px;
+        text-align: center;
+        line-height: 130px;
+        z-index: 5;
+        opacity: 0;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 25px;
+      }
+      .mySkill-l {
+        .fontStyle;
+        text-align: left;
+        line-height: 25px;
+        position: absolute;
+        top: 65%;
+        right: 60%;
+        opacity: 0;
+        -webkit-transform: translateX(-200%);
+                transform: translateX(-200%);
+      }
+      .mySkill-r {
+        .fontStyle;
+        text-align: left;
+        line-height: 25px;
+        position: absolute;
+        top: 38%;
+        left: 60%;
+        opacity: 0;
+        -webkit-transform: translateX(200%);
+                transform: translateX(200%);
+      }
+      img {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        opacity: 0;
+      }
+    }
+    /*第四页*/
+    .fourth {
+      h4 {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        margin : 20% 10%;
+        width: 80%;
+        color: #888;
+        -webkit-transform: rotateX(90deg);
+                transform: rotateX(90deg);
+        border-bottom: 2px solid #a2a4a7;
+      }
+      img {
+        width: 60%;
+        margin-left: 20%;
+        -webkit-transform: rotateX(90deg);
+                transform: rotateX(90deg);
+      }
+    }
+    /*第一页加载动画*/
+    .first.current{
+      .fan {
+        -webkit-transition: transform 1s;
+                transition: transform 1s;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+      }
+      .line {
+        -webkit-transition: transform 1s 0.5s;
+                transition: transform 1s 0.5s;
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+      }
+      .circle {
+        -webkit-transition: top 1s;
+                transition: top 1s;
+        top: 45%;
+      }
+      .circlet {
+        -webkit-transition: top 1s;
+                transition: top 1s;
+        top: 75%;
+      }
+      .myname,
+      .myage {
+        -webkit-transition: all 1s;
+                transition: all 1s;
+        animation: nameupdown 2s;
+        opacity: 1;
+      }
+      img {
+        -webkit-transition: opacity 2s;
+        transition: opacity 2s;
+        opacity: 1;
+      }
+    }
+    /*第二页加载动画*/
+    .second.current{
+      .line {
+        -webkit-transition: transform 1s 0.5s;
+        transition: transform 1s 0.5s;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+      }
+      .circle {
+        -webkit-transition: top 1s;
+        transition: top 1s;
+        top: 45%;
+      }
+      .circlet {
+        -webkit-transition: top 1s;
+        transition: top 1s;
+        top: 75%;
+      }
+      .brief {
+        -webkit-transition: opacity 1.5s 0.5s;
+                transition: opacity 1.5s 0.5s;
+        opacity: 1;
+      }
+      .myDate-l,
+      .myDate-r{
+        -webkit-transition: all 2s;
+                transition: all 2s;
+        opacity: 1;
+
+      }
+      .myWeight,
+      .myGender,
+      .myHobby,
+      .myProfession {
+        -webkit-transition: all 2s;
+                transition: all 2s;
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+      }
+
+      img {
+        -webkit-transition: opacity 2s;
+        transition: opacity 2s;
+        opacity: 1;
+      }
+    }
+    /*第三页加载动画*/
+    .third.current{
+      .line {
+        -webkit-transition: transform 1s 0.5s;
+        transition: transform 1s 0.5s;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+      }
+      .circle {
+        -webkit-transition: top 1s;
+        transition: top 1s;
+        top: 45%;
+      }
+      .circlet {
+        -webkit-transition: top 1s;
+        transition: top 1s;
+        top: 75%;
+      }
+      .skill {
+        -webkit-transition: opacity 1.5s 0.5s;
+        transition: opacity 1.5s 0.5s;
+        opacity: 1;
+      }
+      .mySkill-l {
+        opacity: 1;
+        -webkit-transition: all 2s;
+                transition: all 2s;
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+      }
+      .mySkill-r {
+        opacity: 1;
+        -webkit-transition: all 2s;
+                transition: all 2s;
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+      }
+      img {
+        -webkit-transition: opacity 2s;
+                transition: opacity 2s;
+        opacity: 1;
+      }
+    }
+    /*第四页加载动画*/
+    .fourth.current{
+      perspective: 650px;
+      h4 {
+        -webkit-transition: all 2s;
+                transition: all 2s;
+        -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+      }
+      img {
+        -webkit-transition: all 2s;
+        transition: all 2s;
+        -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+      }
+    }
+
+  }
+  .musicbtn {
+    display: block;
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    z-index: 99;
+    animation: rot 5s linear infinite normal;
+  }
+  .arr {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 10%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 99;
+    animation: updown 2s linear alternate infinite;
+  }
+}
+
+/*音乐图标动画*/
+@keyframes rot {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/*小箭头动画*/
+@keyframes updown {
+  0%{
+    transform: translateY(0px) translateX(-50%);
+  }
+  100%{
+    transform: translateY(15px) translateX(-50%);
+  }
+}
+
+/*姓名年龄动画*/
+@keyframes nameupdown {
+  0%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
